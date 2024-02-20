@@ -27,9 +27,9 @@ const {data} = useQuery({
 
 </script>
 <template class="w-full">
-  <div class="flex justify-center w-full h-full place-items-center mt-10">
-    <div class=" w-fit flex flex-col gap-10 p-7 card shadow-md rounded-md">
-      <h1 >Actor Details</h1>
+  <div class="w-fit h-full flex flex-col gap-10 justify-center p-7 place-items-center">
+    <h1 class="text-center" >Rick & Morty character details</h1>
+    <div class="card shadow-md rounded-md w-fit p-3">
       <div v-if="data">
         <img :src="data.character.image" :alt="data.character.name" class="rounded-md"/>
         <h2>{{ data.character.name }}</h2>

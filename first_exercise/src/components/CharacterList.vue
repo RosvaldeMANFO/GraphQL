@@ -45,7 +45,7 @@ function goToDetails(id: number){
 </script>
 <template>
   <div class="w-full flex flex-col place-items-center justify-center gap-7 p-7">
-    <h1 class="text-center uppercase">Rick & Morty {{ currentPage }} </h1>
+    <h1 class="text-center uppercase">Rick & Morty character: page {{ currentPage }} </h1>
     <div class="flex justify-between gap-11">
       <div @click="loadPage(data.characters.info.prev)" class="user-select-none bg-green-200 rounded-md text-md font-bold border border-green-500 border-solid shadow-md w-fit px-7 py-3 hover:shadow-lg hover:cursor-pointer">Prev</div>
       <button class="user-select-none bg-green-200 rounded-md text-md font-bold border border-green-500 border-solid shadow-md w-fit px-7 py-3 hover:shadow-lg hover:cursor-pointer" @click="loadPage(data.characters.info.next)">Next</button>

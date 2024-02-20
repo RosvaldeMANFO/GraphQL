@@ -1,5 +1,5 @@
-import ActorList from './components/ActorList.vue'
-import ActorDetails from './components/ActorDetails.vue'
+import CharacterList from './components/CharacterList.vue'
+import CharacterDetails from './components/CharacterDetails.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -7,12 +7,12 @@ const router = createRouter({
   routes: [
     { 
       path: '/', 
-      component: ActorList 
+      component: CharacterList 
     },
     { 
       name: 'details',
       path: '/details/:id?', 
-      component: ActorDetails
+      component: CharacterDetails
     },
   ]
 })
