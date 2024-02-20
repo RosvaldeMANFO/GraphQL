@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import ActorList from './components/ActorList.vue';
 </script>
 
 <template>
-  <ActorList />
+  <RouterView />
 </template>
 
 <style scoped>
