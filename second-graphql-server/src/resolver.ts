@@ -36,6 +36,9 @@ export const resolvers: Resolvers = {
   },
 
   People: {
+    eyeColor: (people, _, __, ___) => {
+      return people.eye_color
+    },
     films: (people, _, { dataSources }, __) => {
       return people.films.map((path) => {
         const destructuredPath = path.split("/")

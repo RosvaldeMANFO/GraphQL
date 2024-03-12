@@ -20,7 +20,7 @@ export const typeDefs = gql`
   }
   type People {
     id: ID!
-    eye_color: String!
+    eyeColor: String!
     films: [Film!]!
   }
 

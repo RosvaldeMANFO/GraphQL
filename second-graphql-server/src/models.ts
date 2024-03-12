@@ -14,13 +14,14 @@ export type AuthorModel = {
 };
 
 export type PeopleModel = {
-  id: string,
-  eye_color: string
-  films: string[]
+  id: string;
+  eye_color: string;
+  films: string[];
 }
 
+
 export type FilModel = {
-  id: string,
-  title: string,
-  people: string[],
+  id: string;
+  title: string;
+  people: string[];
 }

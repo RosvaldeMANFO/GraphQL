@@ -33,7 +33,7 @@ export type Film = {
 
 export type People = {
   __typename?: 'People';
-  eye_color: Scalars['String']['output'];
+  eyeColor: Scalars['String']['output'];
   films: Array<Film>;
   id: Scalars['ID']['output'];
 };
@@ -161,7 +161,7 @@ export type FilmResolvers<ContextType = DataSourceContext, ParentType extends Re
 };
 
 export type PeopleResolvers<ContextType = DataSourceContext, ParentType extends ResolversParentTypes['People'] = ResolversParentTypes['People']> = {
-  eye_color?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  eyeColor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   films?: Resolver<Array<ResolversTypes['Film']>, ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
